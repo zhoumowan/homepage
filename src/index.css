@@ -149,6 +149,9 @@ body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none; /* 防止长按选中文本 */
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* 去除移动端点击高亮阴影 */
 }
 
 /* Hover colors and glows for all brands */
