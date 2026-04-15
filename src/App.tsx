@@ -6,22 +6,28 @@ function App() {
     <div className="homepage-container">
       <main className="content">
         <div className="avatar-container">
-          <img
-            src="https://blog.fanzong211.cn/avatar.jpg"
-            alt="Avatar"
-            className="avatar"
-          />
+          <img src="https://blog.fanzong211.cn/avatar.jpg" alt="Avatar" className="avatar" />
         </div>
         <div className="text-container">
           <h1 className="title">fanzong211.cn</h1>
 
           {/* 社交媒体与联系方式 */}
           <div className="social-links">
-            <a href="https://github.com/zhoumowan" target="_blank" rel="noreferrer" className="social-icon github">
+            <a
+              href="https://github.com/zhoumowan"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon github"
+            >
               <Github width={22} height={22} fill="currentColor" />
               <span className="tooltip">GitHub</span>
             </a>
-            <a href="https://blog.fanzong211.cn" target="_blank" rel="noreferrer" className="social-icon blog">
+            <a
+              href="https://blog.fanzong211.cn"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon blog"
+            >
               <Blogger width={22} height={22} fill="currentColor" />
               <span className="tooltip">Blog</span>
             </a>
