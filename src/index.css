@@ -20,6 +20,7 @@ body {
     sans-serif;
   overflow: hidden;
   height: 100vh;
+  height: 100dvh; /* 覆盖 100vh 解决移动端黑边/滚动条问题 */
   min-width: 320px; /* 设置主流移动端设备的最小宽度边界 */
   display: flex;
   align-items: center;
