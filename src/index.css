@@ -20,6 +20,7 @@ body {
     sans-serif;
   overflow: hidden;
   height: 100vh;
+  min-width: 320px; /* 设置主流移动端设备的最小宽度边界 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,6 +208,18 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* 添加一个透明的伪元素，作为鼠标移动到气泡时的桥接，防止在间隙中丢失 hover 状态 */
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: transparent;
 }
 
 .qr-tooltip {
@@ -237,15 +250,23 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
   .text-container {
     align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 
   .title {
-    font-size: 3.8rem;
+    font-size: clamp(2rem, 10vw, 3.8rem);
     padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    text-align: center;
+    white-space: nowrap; /* 强制不换行，保持单行显示 */
   }
 
   .avatar-container {
@@ -256,5 +277,12 @@ body {
   .social-links {
     margin-left: 0;
     justify-content: center;
+    gap: 0.8rem; /* 稍微缩小间距以适应不换行的布局 */
+  }
+
+  /* 稍微缩小移动端图标尺寸以保证在 320px 屏幕下刚好放下一行 */
+  .social-icon {
+    width: 40px;
+    height: 40px;
   }
 }

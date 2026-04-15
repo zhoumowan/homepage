@@ -6,7 +6,7 @@ function App() {
     <div className="homepage-container">
       <main className="content">
         <div className="avatar-container">
-          <img src="https://blog.fanzong211.cn/avatar.jpg" alt="Avatar" className="avatar" />
+          <img src="/avatar.jpg" alt="Avatar" className="avatar" />
         </div>
         <div className="text-container">
           <h1 className="title">fanzong211.cn</h1>
