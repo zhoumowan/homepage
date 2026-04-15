@@ -159,6 +159,14 @@ body {
   color: #ffffff;
 }
 
+/* 强制覆盖多色图标，使其颜色与其他图标保持一致（统一使用当前文本颜色） */
+.social-icon svg path,
+.social-icon svg rect,
+.social-icon svg circle,
+.social-icon svg polygon {
+  fill: currentColor !important;
+}
+
 /* Tooltip styles */
 .tooltip {
   position: absolute;

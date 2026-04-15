@@ -1,4 +1,4 @@
-import { Github, Blogger, Wechat, Mailgun } from '@thesvg/react';
+import { Github, Blogger, Wechat, Mailgun, AzureAllResources  } from '@thesvg/react';
 import './index.css';
 
 function App() {
@@ -21,6 +21,15 @@ function App() {
             >
               <Github width={22} height={22} fill="currentColor" />
               <span className="tooltip">GitHub</span>
+            </a>
+            <a
+              href="https://wall.fanzong211.cn"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon github-report"
+            >
+              <AzureAllResources  width={22} height={22} fill="currentColor" />
+              <span className="tooltip">GitHub Report</span>
             </a>
             <a
               href="https://blog.fanzong211.cn"
