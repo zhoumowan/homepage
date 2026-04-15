@@ -247,6 +247,7 @@ body {
   .homepage-container {
     justify-content: center;
     padding-left: 0;
+    padding-bottom: 12vh; /* 增加底部内边距，将整体内容在移动端视觉上往上提一点 */
   }
 
   .content {
