@@ -1,5 +1,6 @@
 import { Github, Blogger, Wechat, Mailgun, AzureAllResources  } from '@thesvg/react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import './index.css';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         </main>
       </div>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
